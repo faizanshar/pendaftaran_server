@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 //   });
 // });
 app.use("/", router);
+app.listen(port);
 
-const server = http.createServer(app);
-server.listen(port);
+// const server = http.createServer(app);
+// server.listen(port);
