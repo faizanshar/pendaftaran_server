@@ -13,11 +13,11 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-// app.get("/", function (req, res) {
-//   res.send({
-//     message: "test",
-//   });
-// });
+app.get("/", function (req, res) {
+  res.send({
+    message: "test",
+  });
+});
 app.use("/", router);
 app.listen(port);
 
